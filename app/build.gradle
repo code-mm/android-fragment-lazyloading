@@ -1,11 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
     defaultConfig {
-        applicationId "com.example.maohuawei.fragmentlazyloading"
-        minSdkVersion 15
-        targetSdkVersion 26
+        applicationId "com.example.myapplication"
+        minSdkVersion 16
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -16,7 +18,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    buildToolsVersion '27.0.3'
+
     dexOptions {
         incremental true
     }
